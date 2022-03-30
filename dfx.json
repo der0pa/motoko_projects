@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "moreVarients": {
+      "main": "src/moreVarients/main.mo",
+      "type": "motoko"
+    },
+    "moreVarients_assets": {
+      "dependencies": [
+        "moreVarients"
+      ],
+      "frontend": {
+        "entrypoint": "src/moreVarients_assets/src/index.html"
+      },
+      "source": [
+        "src/moreVarients_assets/assets",
+        "dist/moreVarients_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.9.2",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
